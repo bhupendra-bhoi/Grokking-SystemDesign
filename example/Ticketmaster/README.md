@@ -130,10 +130,10 @@ ReserveSeats(api_dev_key, session_id, movie_id, show_id, seats_to_reserve[])
 
 #### Parameters:
 **api_dev_key (string):** same as above<br/>
-**session_id (string):** User’s session ID to track this reservation. Once the reservation time expires, user’s reservation on the server will be removed using this ID.
-**movie_id (string):** Movie to reserve.
-**show_id (string):** Show to reserve.
-**seats_to_reserve (number):** An array containing seat IDs to reserve.
+**session_id (string):** User’s session ID to track this reservation. Once the reservation time expires, user’s reservation on the server will be removed using this ID.<br/>
+**movie_id (string):** Movie to reserve.<br/>
+**show_id (string):** Show to reserve.<br/>
+**seats_to_reserve (number):** An array containing seat IDs to reserve.<br/>
 
 #### Returns: (JSON)
 Returns the status of the reservation, which would be one of the following: 
@@ -245,7 +245,7 @@ On the server, ActiveReservationsService keeps track of expiry (based on reserva
 
 ## 9. Concurrency
 **How to handle concurrency; such that no two users are able to book same seat?** We can use transactions in SQL databases to avoid any clashes. For example, if we are using SQL server we can utilize Transaction Isolation Levels 8 to lock the rows before we can update them. Here is the sample code:
-
+```sql
 **SET TRANSACTION ISOLATION LEVEL SERIALIZABLE;**
 
 **BEGIN TRANSACTION;**
@@ -259,7 +259,7 @@ On the server, ActiveReservationsService keeps track of expiry (based on reserva
     **update** Booking ...
 
 **COMMIT TRANSACTION;**
-
+```
 ‘Serializable’ is the highest isolation level and guarantees safety from Dirty 5, Nonrepeatable 5 and Phantoms 3 reads. One thing to note here, within a transaction if we read rows we get a write lock on them so that they can’t be updated by anyone else.
 
 Once the above database transaction is successful, we can start tracking the reservation in ActiveReservationService.
