@@ -89,12 +89,12 @@ Another important consideration while designing a distributed system is how easy
 Early detection of faults can decrease or avoid system downtime. For example, some enterprise systems can automatically call a service center (without human intervention) when the system experiences a system fault.
 
 # Following Section
-* [CAP Theorem](https://github.com/immo2300576/SystemDesign/blob/master/CAP.md)
-* [Load Balancer](https://github.com/immo2300576/SystemDesign/blob/master/LB.md)
-* [DNS & CDN](https://github.com/immo2300576/SystemDesign/blob/master/DNS.md)
-* [Cache](https://github.com/immo2300576/SystemDesign/blob/master/cache.md)
-* [Consistent Hashing](https://github.com/immo2300576/SystemDesign/blob/master/consistenthashing.md)
-* [Database](https://github.com/immo2300576/SystemDesign/blob/master/database.md)
-* [Index](https://github.com/immo2300576/SystemDesign/blob/master/index.md)
-* [Proxies](https://github.com/immo2300576/SystemDesign/blob/master/proxies.md)
-* [Redundancy and Replication](https://github.com/immo2300576/SystemDesign/blob/master/redundancy%26replication.md)
+* [CAP Theorem](https://github.com/bhupendra-bhoi/Grokking-SystemDesign/blob/master/CAP.md)
+* [Load Balancer](https://github.com/bhupendra-bhoi/Grokking-SystemDesign/blob/master/LB.md)
+* [DNS & CDN](https://github.com/bhupendra-bhoi/Grokking-SystemDesign/blob/master/DNS.md)
+* [Cache](https://github.com/bhupendra-bhoi/Grokking-SystemDesign/blob/master/cache.md)
+* [Consistent Hashing](https://github.com/bhupendra-bhoi/Grokking-SystemDesign/blob/master/consistenthashing.md)
+* [Database](https://github.com/bhupendra-bhoi/Grokking-SystemDesign/blob/master/database.md)
+* [Index](https://github.com/bhupendra-bhoi/Grokking-SystemDesign/blob/master/index.md)
+* [Proxies](https://github.com/bhupendra-bhoi/Grokking-SystemDesign/blob/master/proxies.md)
+* [Redundancy and Replication](https://github.com/bhupendra-bhoi/Grokking-SystemDesign/blob/master/redundancy%26replication.md)
