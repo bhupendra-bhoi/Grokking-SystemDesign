@@ -70,7 +70,7 @@ includeSpellcheck, results_per_page, sorting_order)
 
 #### Returns: (JSON)
 Here is a sample list of movies and their shows:
-
+```json
 [
   {
     "MovieID": 1,
@@ -125,7 +125,7 @@ Here is a sample list of movies and their shows:
     ]
   },
  ]
- 
+``` 
 ReserveSeats(api_dev_key, session_id, movie_id, show_id, seats_to_reserve[])
 
 #### Parameters:
