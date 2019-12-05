@@ -129,7 +129,7 @@ Here is a sample list of movies and their shows:
 ReserveSeats(api_dev_key, session_id, movie_id, show_id, seats_to_reserve[])
 
 #### Parameters:
-**api_dev_key (string):** same as above
+**api_dev_key (string):** same as above<br/>
 **session_id (string):** User’s session ID to track this reservation. Once the reservation time expires, user’s reservation on the server will be removed using this ID.
 **movie_id (string):** Movie to reserve.
 **show_id (string):** Show to reserve.
