@@ -14,9 +14,9 @@
 
 * [Designing a Web Crawler](https://github.com/bhupendra-bhoi/Grokking-SystemDesign/blob/master/example/WebCrawler/README.md)
 * [Designing Facebook’s Newsfeed](https://github.com/bhupendra-bhoi/Grokking-SystemDesign/blob/master/example/Facebook_NewsFeed/README.md)
-* N/A [Designing Yelp or Nearby Friends]()
-* N/A [Designing Uber backend]()
-* N/A [Design Ticketmaster (*New*)]()
+* [Designing Yelp or Nearby Friends](https://github.com/bhupendra-bhoi/Grokking-SystemDesign/blob/master/example/Yelp_Nearby/README.md)
+* [Designing Uber backend](https://github.com/bhupendra-bhoi/Grokking-SystemDesign/blob/master/example/Uber_backend/README.md)
+* [Design Ticketmaster (*New*)](https://github.com/bhupendra-bhoi/Grokking-SystemDesign/blob/master/example/Ticketmaster/README.md)
 * N/A [Additional Resources]()
 
 
