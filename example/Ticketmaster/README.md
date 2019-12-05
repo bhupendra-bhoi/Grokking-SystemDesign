@@ -177,10 +177,10 @@ Following would be a typical ticket booking workflow:
 * Show is full; the user is shown the error message.
 * The seats user wants to reserve are no longer available, but there are other seats available, so the user is taken back to the theater map to choose different seats.
 * There are no seats available to reserve, but all the seats are not booked yet as there are some seats that other users are holding in reservation pool and have not booked yet. The user will be taken to a waiting page where they can wait until required seats get freed from the reservation pool. This waiting could result in following options:
-** If the required number of seats become available, the user is taken to the theater map page where they can choose the seats.
-** While waiting if all seats get booked, or there are fewer seats in the reservation pool than the user intend to book, the user is shown the error message.
-** User cancels the waiting and is taken back to the movie search page.
-** At maximum, a user can wait one hour, after that user’s session gets expired and the user is taken back to the movie search page.
+  * If the required number of seats become available, the user is taken to the theater map page where they can choose the seats.
+  * While waiting if all seats get booked, or there are fewer seats in the reservation pool than the user intend to book, the user is shown the error message.
+  * User cancels the waiting and is taken back to the movie search page.
+  * At maximum, a user can wait one hour, after that user’s session gets expired and the user is taken back to the movie search page.
 9. If seats are reserved successfully, the user has five minutes to pay for the reservation. After payment, booking is marked complete. If the user is not able to pay within five minutes, all their reserved seats are freed to become available to other users.
 
 <p align="center">
