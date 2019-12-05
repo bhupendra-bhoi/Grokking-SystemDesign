@@ -57,14 +57,14 @@ search(api_dev_key, search_terms, user_location, radius_filter, maximum_results_
     category_filter, sort, page_token)
 	
 #### Parameters:
-**api_dev_key (string):** The API developer key of a registered account. This will be used to, among other things, throttle users based on their allocated quota.
-**search_terms (string):** A string containing the search terms.
-**user_location (string):** Location of the user performing the search.
-**radius_filter (number):** Optional search radius in meters.
-**maximum_results_to_return (number):** Number of business results to return.
-**category_filter (string):** Optional category to filter search results, e.g., Restaurants, Shopping Centers, etc.
-**sort (number):** Optional sort mode: Best matched (0 - default), Minimum distance (1), Highest rated (2).
-**page_token (string):** This token will specify a page in the result set that should be returned.
+**api_dev_key (string):** The API developer key of a registered account. This will be used to, among other things, throttle users based on their allocated quota.<br/>
+**search_terms (string):** A string containing the search terms.<br/>
+**user_location (string):** Location of the user performing the search.<br/>
+**radius_filter (number):** Optional search radius in meters.<br/>
+**maximum_results_to_return (number):** Number of business results to return.<br/>
+**category_filter (string):** Optional category to filter search results, e.g., Restaurants, Shopping Centers, etc.<br/>
+**sort (number):** Optional sort mode: Best matched (0 - default), Minimum distance (1), Highest rated (2).<br/>
+**page_token (string):** This token will specify a page in the result set that should be returned.<br/>
 
 #### Returns: (JSON)
 A JSON containing information about a list of businesses matching the search query. Each result entry will have the business name, address, category, rating, and thumbnail.
