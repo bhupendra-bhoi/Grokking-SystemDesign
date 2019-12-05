@@ -1,3 +1,6 @@
+_Index_
+https://github.com/bhupendra-bhoi/Grokking-SystemDesign/blob/master/Footer.md
+
 # Designing Typeahead Suggestion
 Let's design a real-time suggestion service, which will recommend terms to users as they enter text for searching.
 

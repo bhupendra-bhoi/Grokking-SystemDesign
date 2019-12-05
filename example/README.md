@@ -1,3 +1,6 @@
+_Index_
+https://github.com/bhupendra-bhoi/Grokking-SystemDesign/blob/master/Footer.md
+
 # System Design Interviews: A step by step guide
 A lot of software engineers struggle with system design interviews (SDIs) primarily because of three reasons:
 
