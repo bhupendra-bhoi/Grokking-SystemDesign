@@ -12,12 +12,12 @@
 * [Designing an API Rate Limiter](https://github.com/bhupendra-bhoi/Grokking-SystemDesign/blob/master/example/RateLimiter/ReadMe.md)
 * [Designing Twitter Search](https://github.com/bhupendra-bhoi/Grokking-SystemDesign/blob/master/example/TwitterSearch/ReadMe.md)
 
-* [Designing a Web Crawler]()
+* N/A [Designing a Web Crawler]()
 * [Designing Facebook’s Newsfeed](https://github.com/bhupendra-bhoi/Grokking-SystemDesign/blob/master/example/Facebook_NewsFeed/README.md)
-* [Designing Yelp or Nearby Friends]()
-* [Designing Uber backend]()
-* [Design Ticketmaster (*New*)]()
-* [Additional Resources]()
+* N/A [Designing Yelp or Nearby Friends]()
+* N/A [Designing Uber backend]()
+* N/A [Design Ticketmaster (*New*)]()
+* N/A [Additional Resources]()
 
 
 # Glossary of System Design Basics
