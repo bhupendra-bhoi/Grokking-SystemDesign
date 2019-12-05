@@ -1,5 +1,5 @@
 _Index_
-https://github.com/bhupendra-bhoi/Grokking-SystemDesign/blob/master/Footer.md
+https://github.com/bhupendra-bhoi/Grokking-SystemDesign/blob/master/IndexPage.md
 
 # Designing Facebook’s Newsfeed
 Let's design Facebook's Newsfeed, which would contain posts, photos, videos, and status updates from all the people and pages a user follows.

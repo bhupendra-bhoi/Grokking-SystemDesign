@@ -1,5 +1,5 @@
 _Index_
-https://github.com/bhupendra-bhoi/Grokking-SystemDesign/blob/master/Footer.md
+https://github.com/bhupendra-bhoi/Grokking-SystemDesign/blob/master/IndexPage.md
 
 ## SQL vs. NoSQL
 In the world of databases, there are two main types of solutions: SQL and NoSQL (or relational databases and non-relational databases). Both of them differ in the way they were built, the kind of information they store, and the storage method they use.

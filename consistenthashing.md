@@ -1,5 +1,5 @@
 _Index_
-https://github.com/bhupendra-bhoi/Grokking-SystemDesign/blob/master/Footer.md
+https://github.com/bhupendra-bhoi/Grokking-SystemDesign/blob/master/IndexPage.md
 
 # Consistent Hashing
 Distributed Hash Table (DHT) is one of the fundamental components used in distributed scalable systems. Hash Tables need a key, a value, and a hash function where hash function maps the key to a location where the value is stored.

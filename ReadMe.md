@@ -1,5 +1,5 @@
 _Index_
-https://github.com/bhupendra-bhoi/Grokking-SystemDesign/blob/master/Footer.md
+https://github.com/bhupendra-bhoi/Grokking-SystemDesign/blob/master/IndexPage.md
 
 # System Design Basics
 
@@ -92,4 +92,4 @@ Another important consideration while designing a distributed system is how easy
 Early detection of faults can decrease or avoid system downtime. For example, some enterprise systems can automatically call a service center (without human intervention) when the system experiences a system fault.
 
 _Index_
-https://github.com/bhupendra-bhoi/Grokking-SystemDesign/blob/master/Footer.md
+https://github.com/bhupendra-bhoi/Grokking-SystemDesign/blob/master/IndexPage.md

@@ -1,5 +1,5 @@
 _Index_
-https://github.com/bhupendra-bhoi/Grokking-SystemDesign/blob/master/Footer.md
+https://github.com/bhupendra-bhoi/Grokking-SystemDesign/blob/master/IndexPage.md
 
 # Designing Facebook Messenger
 Let's design an instant messaging service like Facebook Messenger where users can send text messages to each other through web and mobile interfaces.

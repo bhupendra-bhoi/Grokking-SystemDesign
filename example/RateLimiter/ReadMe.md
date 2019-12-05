@@ -1,5 +1,5 @@
 _Index_
-https://github.com/bhupendra-bhoi/Grokking-SystemDesign/blob/master/Footer.md
+https://github.com/bhupendra-bhoi/Grokking-SystemDesign/blob/master/IndexPage.md
 
 # Designing an API Rate Limiter
 Let's design an API Rate Limiter which will throttle users based upon the number of the requests they are sending.

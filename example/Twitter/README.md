@@ -1,5 +1,5 @@
 _Index_
-https://github.com/bhupendra-bhoi/Grokking-SystemDesign/blob/master/Footer.md
+https://github.com/bhupendra-bhoi/Grokking-SystemDesign/blob/master/IndexPage.md
 
 # Designing Twitter
 Let's design a Twitter-like social networking service. Users of the service will be able to post tweets, follow other people, and favorite tweets.
