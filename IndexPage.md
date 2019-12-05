@@ -12,7 +12,7 @@
 * [Designing an API Rate Limiter](https://github.com/bhupendra-bhoi/Grokking-SystemDesign/blob/master/example/RateLimiter/ReadMe.md)
 * [Designing Twitter Search](https://github.com/bhupendra-bhoi/Grokking-SystemDesign/blob/master/example/TwitterSearch/ReadMe.md)
 
-* N/A [Designing a Web Crawler]()
+* [Designing a Web Crawler](https://github.com/bhupendra-bhoi/Grokking-SystemDesign/blob/master/example/WebCrawler/README.md)
 * [Designing Facebook’s Newsfeed](https://github.com/bhupendra-bhoi/Grokking-SystemDesign/blob/master/example/Facebook_NewsFeed/README.md)
 * N/A [Designing Yelp or Nearby Friends]()
 * N/A [Designing Uber backend]()
