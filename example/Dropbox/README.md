@@ -164,7 +164,7 @@ The main problem with this approach is that it can lead to unbalanced servers. F
 
 * **Hash-Based Partitioning:** In this scheme we take a hash of the object we are storing and based on this hash we figure out the DB partition to which this object should go. In our case, we can take the hash of the ‘FileID’ of the File object we are storing to determine the partition the file will be stored. Our hashing function will randomly distribute objects into different partitions, e.g., our hashing function can always map any ID to a number between [1…256], and this number would be the partition we will store our object.<br>
 
-This approach can still lead to overloaded partitions, which can be solved by using [Consistent Hashing](https://github.com/immo2300576/SystemDesign/blob/master/consistenthashing.md).
+This approach can still lead to overloaded partitions, which can be solved by using [Consistent Hashing](https://github.com/bhupendra-bhoi/Grokking-SystemDesign/blob/master/consistenthashing.md).
 
 ## 10. Caching
 We can have two kinds of caches in our system. To deal with hot files/chunks we can introduce a cache for Block storage. We can use an off-the-shelf solution like [Memcached](https://en.wikipedia.org/wiki/Memcached) that can store whole chunks with its respective IDs/Hashes and Block servers before hitting Block storage can quickly check if the cache has desired chunk. Based on clients’ usage pattern we can determine how many cache servers we need. A high-end commercial server can have 144GB of memory; one such server can cache 36K chunks.

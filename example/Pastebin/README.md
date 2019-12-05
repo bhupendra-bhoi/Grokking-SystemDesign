@@ -32,7 +32,7 @@ Our Pastebin service should meet the following requirements:
 * Our service should also be accessible through REST APIs by other services.<br>
 
 ## 3. Some Design Considerations
-Pastebin shares some requirements with [URL Shortening service](https://github.com/immo2300576/SystemDesign/tree/master/example/TinyURL), but there are some additional design considerations we should keep in mind.
+Pastebin shares some requirements with [URL Shortening service](https://github.com/bhupendra-bhoi/Grokking-SystemDesign/tree/master/example/TinyURL), but there are some additional design considerations we should keep in mind.
 
 **What should be the limit on the amount of text user can paste at a time?** We can limit users not to have Pastes bigger than 10MB to stop the abuse of the service.
 
@@ -163,16 +163,16 @@ We can divide our datastore layer into two:
 </p>
 
 ## 9. Purging or DB Cleanup
-Please see [Designing a URL Shortening service](https://github.com/immo2300576/SystemDesign/tree/master/example/TinyURL).
+Please see [Designing a URL Shortening service](https://github.com/bhupendra-bhoi/Grokking-SystemDesign/tree/master/example/TinyURL).
 
 ## 10. Data Partitioning and Replication
-Please see [Designing a URL Shortening service](https://github.com/immo2300576/SystemDesign/tree/master/example/TinyURL).
+Please see [Designing a URL Shortening service](https://github.com/bhupendra-bhoi/Grokking-SystemDesign/tree/master/example/TinyURL).
 
 ## 11. Cache and Load Balancer
-Please see [Designing a URL Shortening service](https://github.com/immo2300576/SystemDesign/tree/master/example/TinyURL).
+Please see [Designing a URL Shortening service](https://github.com/bhupendra-bhoi/Grokking-SystemDesign/tree/master/example/TinyURL).
 
 ## 12. Security and Permissions
-Please see [Designing a URL Shortening service](https://github.com/immo2300576/SystemDesign/tree/master/example/TinyURL).
+Please see [Designing a URL Shortening service](https://github.com/bhupendra-bhoi/Grokking-SystemDesign/tree/master/example/TinyURL).
 
 
 

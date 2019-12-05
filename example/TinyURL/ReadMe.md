@@ -126,7 +126,7 @@ We would need two tables: one for storing information about the URL mappings, an
   <img src="images/schema.svg"><br>
 </p>
 
-**What kind of database should we use?** Since we anticipate storing billions of rows, and we don’t need to use relationships between objects – a NoSQL key-value store like [DynamoDB](https://en.wikipedia.org/wiki/Amazon_DynamoDB), [Cassandra](https://en.wikipedia.org/wiki/Apache_Cassandra) or [Riak](https://en.wikipedia.org/wiki/Riak) is a better choice. A NoSQL choice would also be easier to scale. Please see [SQL vs NoSQL](https://github.com/immo2300576/SystemDesign/blob/master/database.md) for more details.
+**What kind of database should we use?** Since we anticipate storing billions of rows, and we don’t need to use relationships between objects – a NoSQL key-value store like [DynamoDB](https://en.wikipedia.org/wiki/Amazon_DynamoDB), [Cassandra](https://en.wikipedia.org/wiki/Apache_Cassandra) or [Riak](https://en.wikipedia.org/wiki/Riak) is a better choice. A NoSQL choice would also be easier to scale. Please see [SQL vs NoSQL](https://github.com/bhupendra-bhoi/Grokking-SystemDesign/blob/master/database.md) for more details.
 
 ## 6. Basic System Design and Algorithm
 The problem we are solving here is, how to generate a short and unique key for a given URL.
@@ -194,7 +194,7 @@ The main problem with this approach is that it can lead to unbalanced DB servers
 
 Our hashing function will randomly distribute URLs into different partitions (e.g., our hashing function can always map any ‘key’ to a number between [1…256]), and this number would represent the partition in which we store our object.
 
-This approach can still lead to overloaded partitions, which can be solved by using [Consistent Hashing](https://github.com/immo2300576/SystemDesign/blob/master/consistenthashing.md).
+This approach can still lead to overloaded partitions, which can be solved by using [Consistent Hashing](https://github.com/bhupendra-bhoi/Grokking-SystemDesign/blob/master/consistenthashing.md).
 
 ## 8. Cache
 We can cache URLs that are frequently accessed. We can use some off-the-shelf solution like Memcache, which can store full URLs with their respective hashes. The application servers, before hitting backend storage, can quickly check if the cache has the desired URL.

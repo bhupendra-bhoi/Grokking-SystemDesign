@@ -64,7 +64,7 @@ We need to store data about users, their uploaded photos, and people they follow
   <img src="images/schema.png"><br>
 </p>
 
-A straightforward approach for storing the above schema would be to use an RDBMS like MySQL since we require joins. But relational databases come with their challenges, especially when we need to scale them. For details, please take a look at [SQL vs. NoSQL](https://github.com/immo2300576/SystemDesign/blob/master/database.md).
+A straightforward approach for storing the above schema would be to use an RDBMS like MySQL since we require joins. But relational databases come with their challenges, especially when we need to scale them. For details, please take a look at [SQL vs. NoSQL](https://github.com/bhupendra-bhoi/Grokking-SystemDesign/blob/master/database.md).
 
 We can store photos in a distributed file storage like [HDFS](https://en.wikipedia.org/wiki/Apache_Hadoop) or [S3](https://en.wikipedia.org/wiki/Amazon_S3).
 
@@ -164,7 +164,7 @@ auto-increment-offset = 2
 
 We can put a load balancer in front of both of these databases to round robin between them and to deal with downtime. Both these servers could be out of sync with one generating more keys than the other, but this will not cause any issue in our system. We can extend this design by defining separate ID tables for Users, Photo-Comments, or other objects present in our system.
 
-**Alternately**, we can implement a ‘key’ generation scheme similar to what we have discussed in [Designing a URL Shortening service like TinyURL](https://github.com/immo2300576/SystemDesign/tree/master/example/TinyURL).
+**Alternately**, we can implement a ‘key’ generation scheme similar to what we have discussed in [Designing a URL Shortening service like TinyURL](https://github.com/bhupendra-bhoi/Grokking-SystemDesign/tree/master/example/TinyURL).
 
 **How can we plan for the future growth of our system?** We can have a large number of logical partitions to accommodate future data growth, such that in the beginning, multiple logical partitions reside on a single physical database server. Since each database server can have multiple database instances on it, we can have separate databases for each logical partition on any server. So whenever we feel that a particular database server has a lot of data, we can migrate some logical partitions from it to another server. We can maintain a config file (or a separate database) that can map our logical partitions to database servers; this will enable us to move partitions around easily. Whenever we want to move a partition, we only have to update the config file to announce the change.
 
@@ -185,7 +185,7 @@ Whenever these servers need to generate the News Feed of a user, they will first
 
 3. **Hybrid:** We can adopt a hybrid approach. We can move all the users who have a high number of follows to a pull-based model and only push data to those users who have a few hundred (or thousand) follows. Another approach could be that the server pushes updates to all the users not more than a certain frequency, letting users with a lot of follows/updates to regularly pull data.
 
-For a detailed discussion about News Feed generation, take a look at [Designing Facebook’s Newsfeed](https://github.com/immo2300576/SystemDesign/tree/master/example/Facebook_NewsFeed).
+For a detailed discussion about News Feed generation, take a look at [Designing Facebook’s Newsfeed](https://github.com/bhupendra-bhoi/Grokking-SystemDesign/tree/master/example/Facebook_NewsFeed).
 
 ## 12. News Feed Creation with Sharded Data
 One of the most important requirement to create the News Feed for any given user is to fetch the latest photos from all people the user follows. For this, we need to have a mechanism to sort photos on their time of creation. To efficiently do this, we can make photo creation time part of the PhotoID. As we will have a primary index on PhotoID, it will be quite quick to find the latest PhotoIDs.
@@ -198,10 +198,10 @@ We can use epoch time for this. Let’s say our PhotoID will have two parts; the
 ```
 We would need 31 bits to store this number. Since on the average, we are expecting 23 new photos per second; we can allocate 9 bits to store auto incremented sequence. So every second we can store (2^9 => 512) new photos. We can reset our auto incrementing sequence every second.
 
-We will discuss more details about this technique under ‘Data Sharding’ in [Designing Twitter](https://github.com/immo2300576/SystemDesign/blob/master/example/Twitter/README.md).
+We will discuss more details about this technique under ‘Data Sharding’ in [Designing Twitter](https://github.com/bhupendra-bhoi/Grokking-SystemDesign/blob/master/example/Twitter/README.md).
 
 ## 13. Cache and Load balancing
-Our service would need a massive-scale photo delivery system to serve the globally distributed users. Our service should push its content closer to the user using a large number of geographically distributed photo cache servers and use CDNs (for details see [Caching](https://github.com/immo2300576/SystemDesign/blob/master/cache.md)).
+Our service would need a massive-scale photo delivery system to serve the globally distributed users. Our service should push its content closer to the user using a large number of geographically distributed photo cache servers and use CDNs (for details see [Caching](https://github.com/bhupendra-bhoi/Grokking-SystemDesign/blob/master/cache.md)).
 
 We can introduce a cache for metadata servers to cache hot database rows. We can use Memcache to cache the data and Application servers before hitting database can quickly check if the cache has desired rows. Least Recently Used (LRU) can be a reasonable cache eviction policy for our system. Under this policy, we discard the least recently viewed row first.
 

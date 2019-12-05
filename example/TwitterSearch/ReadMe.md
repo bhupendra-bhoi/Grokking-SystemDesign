@@ -85,7 +85,7 @@ We have a couple of issues with this approach:
 
 1. What if a word becomes hot? Then there will be a lot of queries on the server holding that word. This high load will affect the performance of our service.<br>
 2. Over time, some words can end up storing a lot of TweetIDs compared to others, therefore, maintaining a uniform distribution of words while tweets are growing is quite tricky.<br>
-To recover from these situations we either have to repartition our data or use [Consistent Hashing](https://github.com/immo2300576/SystemDesign/blob/master/consistenthashing.md).
+To recover from these situations we either have to repartition our data or use [Consistent Hashing](https://github.com/bhupendra-bhoi/Grokking-SystemDesign/blob/master/consistenthashing.md).
 
 **Sharding based on the tweet object:** While storing, we will pass the TweetID to our hash function to find the server and index all the words of the tweet on that server. While querying for a particular word, we have to query all the servers, and each server will return a set of TweetIDs. A centralized server will aggregate these results to return them to the user.
 

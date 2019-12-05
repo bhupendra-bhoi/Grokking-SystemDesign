@@ -94,7 +94,7 @@ We need to store data about users, their tweets, their favorite tweets, and peop
   <img src="images/schema.svg"><br>
 </p>
 
-For choosing between SQL and NoSQL databases to store the above schema, please see ‘Database schema’ under [Designing Instagram](https://github.com/immo2300576/SystemDesign/tree/master/example/Instagram).
+For choosing between SQL and NoSQL databases to store the above schema, please see ‘Database schema’ under [Designing Instagram](https://github.com/bhupendra-bhoi/Grokking-SystemDesign/tree/master/example/Instagram).
 
 ## 7. Data Sharding
 Since we have a huge number of new tweets every day and our read load is extremely high too, we need to distribute our data onto multiple machines such that we can read/write it efficiently. We have many options to shard our data; let’s go through them one by one:
@@ -184,7 +184,7 @@ By monitoring these counters, we will realize if we need more replication, load 
 ## 13. Extended Requirements
 **How do we serve feeds?** Get all the latest tweets from the people someone follows and merge/sort them by time. Use pagination to fetch/show tweets. Only fetch top N tweets from all the people someone follows. This N will depend on the client’s Viewport, since on a mobile we show fewer tweets compared to a Web client. We can also cache next top tweets to speed things up.
 
-Alternately, we can pre-generate the feed to improve efficiency; for details please see ‘Ranking and timeline generation’ under [Designing Instagram](https://github.com/immo2300576/SystemDesign/tree/master/example/Instagram).
+Alternately, we can pre-generate the feed to improve efficiency; for details please see ‘Ranking and timeline generation’ under [Designing Instagram](https://github.com/bhupendra-bhoi/Grokking-SystemDesign/tree/master/example/Instagram).
 
 **Retweet:** With each Tweet object in the database, we can store the ID of the original Tweet and not store any contents on this retweet object.
 
