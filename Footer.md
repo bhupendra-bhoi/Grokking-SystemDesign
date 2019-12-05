@@ -1,6 +1,3 @@
-
-_[Index]_
-
 # System Design Problems
 
 * [System Design Interviews: A step by step guide](https://github.com/bhupendra-bhoi/Grokking-SystemDesign/blob/master/example/README.md)
