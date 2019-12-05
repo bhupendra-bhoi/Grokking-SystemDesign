@@ -57,14 +57,14 @@ search(api_dev_key, search_terms, user_location, radius_filter, maximum_results_
     category_filter, sort, page_token)
 	
 #### Parameters:
-api_dev_key (string): The API developer key of a registered account. This will be used to, among other things, throttle users based on their allocated quota.
-search_terms (string): A string containing the search terms.
-user_location (string): Location of the user performing the search.
-radius_filter (number): Optional search radius in meters.
-maximum_results_to_return (number): Number of business results to return.
-category_filter (string): Optional category to filter search results, e.g., Restaurants, Shopping Centers, etc.
-sort (number): Optional sort mode: Best matched (0 - default), Minimum distance (1), Highest rated (2).
-page_token (string): This token will specify a page in the result set that should be returned.
+**api_dev_key (string):** The API developer key of a registered account. This will be used to, among other things, throttle users based on their allocated quota.
+**search_terms (string):** A string containing the search terms.
+**user_location (string):** Location of the user performing the search.
+**radius_filter (number):** Optional search radius in meters.
+**maximum_results_to_return (number):** Number of business results to return.
+**category_filter (string):** Optional category to filter search results, e.g., Restaurants, Shopping Centers, etc.
+**sort (number):** Optional sort mode: Best matched (0 - default), Minimum distance (1), Highest rated (2).
+**page_token (string):** This token will specify a page in the result set that should be returned.
 
 #### Returns: (JSON)
 A JSON containing information about a list of businesses matching the search query. Each result entry will have the business name, address, category, rating, and thumbnail.
@@ -80,9 +80,9 @@ Let’s see what are different ways to store this data and also find out which m
 One simple solution could be to store all the data in a database like MySQL. Each place will be stored in a separate row, uniquely identified by LocationID. Each place will have its longitude and latitude stored separately in two different columns, and to perform a fast search; we should have indexes on both these fields.
 
 To find all the nearby places of a given location (X, Y) within a radius ‘D’, we can query like this:
-
+```
 Select * from Places where Latitude between X-D and X+D and Longitude between Y-D and Y+D
-
+```
 **How efficient this query would be?** We have estimated 500M places to be stored in our service. Since we have two separate indexes, each index can return a huge list of places, and performing an intersection on those two lists won’t be efficient. Another way to look at this problem is that there could be too many locations between ‘X-D’ and ‘X+D’, and similarly between ‘Y-D’ and ‘Y+D’. If we can somehow shorten these lists, it can improve the performance of our query.
 
 #### b. Grids
@@ -98,9 +98,9 @@ Let’s assume that GridID (a four bytes number) would uniquely identify grids i
 **What could be a reasonable grid size?** Grid size could be equal to the distance we would like to query since we also want to reduce the number of grids. If the grid size is equal to the distance we want to query, then we only need to search within the grid which contains the given location and neighboring eight grids. Since our grids would be statically defined (from the fixed grid size), we can easily find the grid number of any location (lat, long) and its neighboring grids.
 
 In the database, we can store the GridID with each location and have an index on it too for faster searching. Now, our query will look like:
-
+```
 Select * from Places where Latitude between X-D and X+D and Longitude between Y-D and Y+D and GridID in (GridID, GridID1, GridID2, …, GridID8)
-
+```
 This will undoubtedly improve the runtime of our query.
 
 **Should we keep our index in memory?** Maintaining the index in memory will improve the performance of our service. We can keep our index in a hash table, where ‘key’ would be the grid number and ‘value’ would be the list of places contained in that grid.
