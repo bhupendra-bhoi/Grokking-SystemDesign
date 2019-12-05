@@ -3,7 +3,7 @@ _[Footer]_
 
 # System Design Problems
 
-* [System Design Interviews: A step by step guide](https://github.com/bhupendra-bhoi/Grokking-SystemDesign/example/ReadMe.md)
+* [System Design Interviews: A step by step guide](https://github.com/bhupendra-bhoi/Grokking-SystemDesign/example/README.md)
 * [Designing a URL Shortening service like TinyURL](https://github.com/bhupendra-bhoi/Grokking-SystemDesign/example/TinyURL/ReadMe.md)
 * [Designing Pastebin](https://github.com/bhupendra-bhoi/Grokking-SystemDesign/example/Pastebin/README.md)
 * [Designing Instagram](https://github.com/bhupendra-bhoi/Grokking-SystemDesign/example/Instagram/README.md)
