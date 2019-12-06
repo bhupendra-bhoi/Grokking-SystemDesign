@@ -47,7 +47,7 @@ There is a variety of load balancing methods, which use different algorithms for
 The load balancer can be a single point of failure; to overcome this, a second load balancer can be connected to the first to form a cluster. Each LB monitors the health of the other and, since both of them are equally capable of serving traffic and failure detection, in the event the main load balancer fails, the second load balancer takes over.
 
 <p align="center">
-  <img src="images/LB3.svg"><br>
+  <img src="images/LB3.PNG"><br>
 </p>
 
 Following links have some good discussion about load balancers:<br>
