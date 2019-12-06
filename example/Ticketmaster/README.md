@@ -246,7 +246,7 @@ On the server, ActiveReservationsService keeps track of expiry (based on reserva
 ## 9. Concurrency
 **How to handle concurrency; such that no two users are able to book same seat?** We can use transactions in SQL databases to avoid any clashes. For example, if we are using SQL server we can utilize Transaction Isolation Levels 8 to lock the rows before we can update them. Here is the sample code:
 ```sql
-**SET TRANSACTION ISOLATION LEVEL SERIALIZABLE;**
+SET TRANSACTION ISOLATION LEVEL SERIALIZABLE;
 
 BEGIN TRANSACTION;
 
