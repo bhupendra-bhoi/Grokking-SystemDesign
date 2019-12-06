@@ -11,7 +11,7 @@ Long-Polling, WebSockets, and Server-Sent Events are popular communication proto
 3. The server sends the response back to the client on the opened request.<br>
 
 <p align="center">
-  <img src="images/clientServer.svg"><br>
+  <img src="images/clientServer.svg?sanitize=true"><br>
   <i>HTTP Protocol</i>
 </p>
 
@@ -25,7 +25,7 @@ Polling is a standard technique used by the vast majority of AJAX applications. 
 The problem with Polling is that the client has to keep asking the server for any new data. As a result, a lot of responses are empty, creating HTTP overhead.
 
 <p align="center">
-  <img src="images/clientServer2.svg"><br>
+  <img src="images/clientServer2.svg?sanitize=true"><br>
   <i>Ajax Polling Protocol</i>
 </p>
 
@@ -43,7 +43,7 @@ The basic life cycle of an application using HTTP Long-Polling is as follows:
 5. Each Long-Poll request has a timeout. The client has to reconnect periodically after the connection is closed due to timeouts.
 
 <p align="center">
-  <img src="images/clientServer3.svg"><br>
+  <img src="images/clientServer3.svg?sanitize=true"><br>
   <i>Long Polling Protocol</i>
 </p>
 
@@ -51,7 +51,7 @@ The basic life cycle of an application using HTTP Long-Polling is as follows:
 WebSocket provides [Full duplex](https://en.wikipedia.org/wiki/Duplex_(telecommunications)#Full_duplex) communication channels over a single TCP connection. It provides a persistent connection between a client and a server that both parties can use to start sending data at any time. The client establishes a WebSocket connection through a process known as the WebSocket handshake. If the process succeeds, then the server and client can exchange data in both directions at any time. The WebSocket protocol enables communication between a client and a server with lower overheads, facilitating real-time data transfer from and to the server. This is made possible by providing a standardized way for the server to send content to the browser without being asked by the client and allowing for messages to be passed back and forth while keeping the connection open. In this way, a two-way (bi-directional) ongoing conversation can take place between a client and a server.
 
 <p align="center">
-  <img src="images/clientServer4.svg"><br>
+  <img src="images/clientServer4.svg?sanitize=true"><br>
   <i>WebSockets Protocol</i>
 </p>
 
@@ -64,6 +64,6 @@ Under SSEs the client establishes a persistent and long-term connection with the
 SSEs are best when we need real-time traffic from the server to the client or if the server is generating data in a loop and will be sending multiple events to the client.
 
 <p align="center">
-  <img src="images/clientServer5.svg"><br>
+  <img src="images/clientServer5.svg?sanitize=true"><br>
   <i>Server Sent Events Protocol</i>
 </p>
